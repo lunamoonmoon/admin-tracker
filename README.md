@@ -19,42 +19,46 @@ To run this script, you need:
   - `python-dotenv`
 
 You can install the necessary packages using `pip3`:
-
 ```bash
 pip3 install pandas openpyxl python-dotenv
+```
 
 Installation
 Clone the repository (if applicable):
-bash
+```bash
 Copy code
 git clone <repository-url>
 cd <repository-directory>
+```
 
 Set up a virtual environment (optional but recommended):
-bash
+```bash
 Copy code
 python3 -m venv venv
 deactivate (when you are finished in venv)
 source venv/bin/activate
+```
 
 Install the required packages:
-
-bash
 Copy code
+```bash
 pip install pandas openpyxl python-dotenv
+```
 Create a .env file in the project directory to set the required environment variables:
 
-plaintext
 Copy code
+```bash
 BASE_PATH=/path/to/employee/files
 OUTPUT_FILE=/path/to/output/spreadsheet.xlsx
 BASE_PATH: Directory containing employee folders organized by year-month.
 OUTPUT_FILE: Path to the Excel file where the data will be saved.
+```
 
 Usage
 Run the script with:
-bash
+```bash
 python3 teleworkupdates.py
+```
 
 The script will:
 Load environment variables from the .env file.
